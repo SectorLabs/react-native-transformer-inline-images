@@ -4,7 +4,7 @@ const svgTransformer = require('react-native-svg-transformer');
 
 const getUpstreamTransformer = () => {
   const reactNativeVersionString = require('react-native/package.json').version;
-  const reactNativeMinorVersion = semver(reactNativeVersionString).minor;
+  const reactNativeMinorVersion = semver.parse(reactNativeVersionString).minor;
 
   if (reactNativeMinorVersion >= 59) {
     return require('metro-react-native-babel-transformer');
