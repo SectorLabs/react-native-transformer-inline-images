@@ -1,0 +1,20 @@
+{
+  "name": "react-native-transformer-inline-images",
+  "version": "0.0.1",
+  "description": "Inlines images into the React-Native JS bundle.",
+  "main": "index.js",
+  "repository": "https://github.com/SectorLabs/react-native-image-transformer",
+  "author": "Swen Kooij <swen@sectorlabs.ro>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "format": "yarn prettier --write --config ./prettier.config.js '**/*(*.js)'"
+  },
+  "dependencies": {
+    "react-native-svg-transformer": "^0.14.3",
+    "semver": "^7.1.1"
+  },
+  "devDependencies": {
+    "prettier": "^1.19.1"
+  }
+}
