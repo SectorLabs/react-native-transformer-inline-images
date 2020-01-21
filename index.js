@@ -42,7 +42,7 @@ module.exports.transform = function(src, filename, options) {
   if (filename.endsWith('png') || filename.endsWith('jpg')) {
     const mimeType = `image/${filename.split('.')[1]}`;
     const imageContent = fs.readFileSync(filename);
-    const imageContentBase64 = new Buffer(imageContent).toString('base64');
+    const imageContentBase64 = Buffer.from(imageContent).toString('base64');
     const imageJSModuleSource =
       'module.exports = ' +
       JSON.stringify({ uri: `data:${mimeType};base64,${imageContentBase64}` }) +
