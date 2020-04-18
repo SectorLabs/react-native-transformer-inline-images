@@ -1,9 +1,9 @@
 {
   "name": "react-native-transformer-inline-images",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Inlines images into the React-Native JS bundle.",
   "main": "index.js",
-  "repository": "https://github.com/SectorLabs/react-native-image-transformer",
+  "repository": "https://github.com/SectorLabs/react-native-transformer-inline-images",
   "author": "Swen Kooij <swen@sectorlabs.ro>",
   "license": "MIT",
   "private": false,
